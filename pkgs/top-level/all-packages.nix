@@ -1037,6 +1037,8 @@ in
 
   fxlinuxprintutil = callPackage ../tools/misc/fxlinuxprintutil { };
 
+  flips = callPackage ../tools/misc/flips { };
+
   genpass = callPackage ../tools/security/genpass {
     inherit (darwin.apple_sdk.frameworks) CoreFoundation Security;
   };
