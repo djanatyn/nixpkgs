@@ -685,6 +685,8 @@ in {
     inherit (pkgs) substituteAll dotnet-sdk;
   };
 
+  ebooklib = callPackage ../development/python-modules/ebooklib { };
+
   emcee = callPackage ../development/python-modules/emcee { };
 
   emailthreads = callPackage ../development/python-modules/emailthreads { };
@@ -6207,6 +6209,8 @@ in {
   extras = callPackage ../development/python-modules/extras { };
 
   extension-helpers = callPackage ../development/python-modules/extension-helpers { };
+
+  textract = callPackage ../development/python-modules/textract { };
 
   texttable = callPackage ../development/python-modules/texttable { };
 

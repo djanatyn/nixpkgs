@@ -21563,6 +21563,8 @@ in
 
   openshift = callPackage ../applications/networking/cluster/openshift { };
 
+  organize = python3Packages.callPackage ../applications/misc/organize { };
+
   oroborus = callPackage ../applications/window-managers/oroborus {};
 
   osm2pgsql = callPackage ../tools/misc/osm2pgsql { };
