@@ -1,4 +1,4 @@
-{ lib, buildPythonPackage, fetchPypi }:
+{ lib, buildPythonPackage, fetchPypi, docx2txt, ebooklib }:
 
 buildPythonPackage rec {
   pname = "textract";
@@ -8,6 +8,8 @@ buildPythonPackage rec {
     inherit pname version;
     sha256 = "040k2np22hgx8n3i0x2a8jymsgqy6swis940wgjzhnmq4gwv44v2";
   };
+
+  propagatedBuildInputs = [ docx2txt ebooklib ];
 
   meta = with lib; {
     description = "Extract text from any document";

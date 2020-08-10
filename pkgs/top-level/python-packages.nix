@@ -679,6 +679,8 @@ in {
 
   docrep = callPackage ../development/python-modules/docrep { };
 
+  docx2txt = callPackage ../development/python-modules/docx2txt { };
+
   dominate = callPackage ../development/python-modules/dominate { };
 
   dotnetcore2 = callPackage ../development/python-modules/dotnetcore2 {
