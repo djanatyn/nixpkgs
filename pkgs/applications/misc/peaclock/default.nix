@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
     description = "A clock, timer, and stopwatch for the terminal";
     homepage = "https://octobanana.com/software/peaclock";
     license = licenses.mit;
-    platforms = [ "x86_64-linux" "i686-linux" "aarch64-linux" ];
+    platforms = platforms.unix;
     maintainers = with maintainers; [ djanatyn ];
   };
 }
