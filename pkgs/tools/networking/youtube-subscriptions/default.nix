@@ -1,6 +1,11 @@
 { lib, fetchFromGitHub, rustPlatform }:
 
 rustPlatform.buildRustPackage rec {
+  # TODO: add cargo-lock.patch file
+  #
+  # the tool fetches a webbrowser-rs fork for android support
+  # using a git path in Cargo.lock. change the Cargo.lock to use crates.io
+  # instead, or ship the fork and load it locally
   pname = "youtube-subscriptions";
   version = "0.2.73";
 
