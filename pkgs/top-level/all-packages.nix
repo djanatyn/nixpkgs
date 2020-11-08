@@ -24771,6 +24771,8 @@ in
 
   youtube-viewer = perlPackages.WWWYoutubeViewer;
 
+  youtube-subscriptions = callPackage ../tools/networking/youtube-subscriptions { };
+
   ytalk = callPackage ../applications/networking/instant-messengers/ytalk { };
 
   ytcc = callPackage ../tools/networking/ytcc { };
