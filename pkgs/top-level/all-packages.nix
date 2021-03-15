@@ -8584,6 +8584,8 @@ in
 
   wakatime = pythonPackages.callPackage ../tools/misc/wakatime { };
 
+  wakapi = callPackage ../tools/misc/wakapi { };
+
   weather = callPackage ../applications/misc/weather { };
 
   wego = callPackage ../applications/misc/wego { };
